@@ -28,7 +28,7 @@ export class CalendarComponent {
       let chore: any
       for (chore of chores) {
         this.events.push({
-          start: new Date(new Date(chore.assignedDate).setUTCHours(4, 0, 0, 0)),
+          start: new Date(new Date(chore.dueDate).setUTCHours(4, 0, 0, 0)),
           title: chore.name
         })
       }
